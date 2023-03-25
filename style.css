@@ -1,0 +1,64 @@
+.table-flow{
+    max-height: 465px;
+    overflow-y: auto;
+}
+
+table tr{
+ 
+   cursor: pointer;
+   transition: 0.2s;
+}
+table tr:hover:not(:first-child){
+    background-color:rgba(13, 109, 253, 0.479) ;
+}
+table tr:nth-child(odd){
+    background-color: rgb(241, 241, 241);
+}
+table tr:nth-child(even){
+    background-color:rgba(255, 255, 255)  ;
+}
+table tr:first-child{
+   background-color: rgb(13,110,253);
+   color: rgb(255, 255, 255);
+}
+table td {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* customize scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0d6dfdb6; 
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0d6dfd7c; 
+  }
+/* customize scrollbar */
+
+
+
+@media (max-width:570px) {
+    
+    .students-list{
+        overflow-x: auto;
+    }
+    table {
+        
+        min-width: calc(100% + 200px);
+    } 
+}

@@ -4,6 +4,41 @@ const cards = document.querySelector(".cards");
 
 let arrOfStudents = [];
 
+// let arr = JSON.parse(localStorage.getItem('students'));
+// console.log(arr);
+// function display(arr){
+//  arr.map((ele)=>{
+//   //create image card
+
+//   const img = document.createElement("img");
+//   img.setAttribute("src", "./18915856.jpg");
+
+//   // create elements
+//   let outDiv = document.createElement("div");
+//   outDiv.className = "card";
+//   let inDiv = document.createElement("div");
+//   inDiv.className = "text";
+
+//   let name = document.createElement("p");
+//   name.textContent = `Name : ${ele["fullName"]}`;
+
+//   let phone = document.createElement("p");
+//   phone.textContent = `Phone-Number : ${ele["pnumber"]}`;
+
+//   let stdMajor = document.createElement("p");
+//   stdMajor.textContent = `Major : ${ele["major"]}`;
+
+//   // append elements
+//   inDiv.append(name, phone, stdMajor);
+
+//   outDiv.appendChild(img);
+//   outDiv.appendChild(inDiv);
+
+//   cards.appendChild(outDiv);
+//  })
+// }
+// display(arr);
+
 // constructor
 function Student(fullName, date, gender, grade, major, pnumber, imgUrl) {
   (this.fullName = fullName),
@@ -44,7 +79,9 @@ form.addEventListener("submit", (e) => {
 });
 
 function studentCard(std) {
+ 
   //create image card
+
   const img = document.createElement("img");
   img.setAttribute("src", "./18915856.jpg");
 
@@ -71,4 +108,5 @@ function studentCard(std) {
 
   cards.appendChild(outDiv);
 }
+
 
